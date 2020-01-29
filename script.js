@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
   // Creare un oggetto che descriva uno studente con le
   // seguenti proprietà: nome, cognome e età. Stampare a
@@ -45,11 +45,27 @@ $(document).ready(function(){
     },
   ]
 
+  // Dare la possibilità all’utente attraverso 3 prompt di
+  // aggiungere un nuovo oggetto studente inserendo
+  // nell’ordine: nome, cognome e età.
+
+  var nome = prompt("Inserisci il tuo nome");
+  var cognome = prompt("Inserisci il tuo cognome");
+  var eta = prompt("Inserisci la tua eta");
+
+  var studenteVuoto = {
+    "nome" : nome,
+    "cognome" : cognome,
+    "eta" : eta,
+  };
+
+  studenti.push(studenteVuoto);
+  console.log(studenti);
+
   for (var i = 0; i < studenti.length; i++) {
     var result = studenti[i];
     console.log(result);
   }
-
 
 
 });
