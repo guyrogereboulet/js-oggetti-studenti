@@ -62,10 +62,13 @@ $(document).ready(function () {
   studenti.push(studenteVuoto);
   console.log(studenti);
 
+
   for (var i = 0; i < studenti.length; i++) {
     var result = studenti[i];
     console.log(result);
   }
+
+  $(".text").append(studenti[i]);
 
 
 });
