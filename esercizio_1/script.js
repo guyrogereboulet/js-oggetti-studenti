@@ -65,7 +65,7 @@ $(document).ready(function () {
 
   for (var i = 0; i < studenti.length; i++) {
     var result = studenti[i];
-    $(".text").append(" nome: " + result.nome + " cognome: " + result.cognome + " eta: " + result.eta )
+    $(".text").append(" nome: " + result.nome + " cognome: " + result.cognome + " eta: " + result.eta + '<br>');
   }
 
 
