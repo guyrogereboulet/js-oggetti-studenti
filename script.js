@@ -68,7 +68,9 @@ $(document).ready(function () {
     console.log(result);
   }
 
-  $(".text").append(studenti[i]);
+  $(".text").append(studenti.toString());
+
+
 
 
 });
