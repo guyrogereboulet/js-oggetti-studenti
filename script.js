@@ -65,12 +65,8 @@ $(document).ready(function () {
 
   for (var i = 0; i < studenti.length; i++) {
     var result = studenti[i];
-    console.log(result);
+    $(".text").append(" nome: " + result.nome + " cognome: " + result.cognome + " eta: " + result.eta )
   }
-
-  $(".text").append(studenti.toString());
-
-
 
 
 });
