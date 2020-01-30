@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.js" charset="utf-8"></script>
-    <title>js-oggetti-studenti</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.min.js" charset="utf-8"></script>
+    <title>js-oggetti-studenti-handlebars</title>
   </head>
   <body>
-    <div class="#app">
+    <ul id="app">
 
-    </div>
+    </ul>
      <script id="entry-template" type="text/x-handlebars-template">
-        <div class="entry">
+        <li class="entry">
           <h1>{{title}}</h1>
           <div class="body">
             {{body}}
           </div>
-        </div>
+          <p class="copy">{{author}}</p>
+        </li>
       </script>
     <script src="script.js" charset="utf-8"></script>
   </body>
